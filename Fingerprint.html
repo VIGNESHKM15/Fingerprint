@@ -113,7 +113,7 @@ svg {
 }
 </style>
 <body>
-    <button class='button' type='button' onclick="window.location.href='https://github.com/VIGNESHKM15/cutter-song/raw/main/loginpage.html'">
+    <button class='button' type='button' onclick="redirectToSubfolder()">
         press to scan fingerprint
         <svg xmlns="http://www.w3.org/2000/svg" id="OBJECTS" viewBox="0 0 103.051 102">
            <defs>
@@ -166,6 +166,9 @@ svg {
         </svg>
         </button>
         <script>
+          function redirectToSubfolder() {
+              window.location.href = 'Nav/loginpage.html';
+          }
             gsap.registerPlugin(DrawSVGPlugin);
 
             const tl = gsap.timeline({ paused: true });
